@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My E-commerce Website</title>
+  <link rel="stylesheet" href="Shopping cart.css">
+</head>
+<body>
+
+    <div class="top-banner">
+        <p class="scroll-text">Use Code : NEW10 To Get 10% OFF On Your First Order
+      </div>
+
+      <header class="header">
+        <div class="logo">
+          <img src="KALABILLA LOGO.png" alt="Logo">
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search by products">
+          <button>SEARCH</button>
+        </div>
+    
+        <nav class="nav-links">
+          <a href="FINAL.html">HOME</a>
+          <a href="Apparel.html">APPAREL</a>
+          <a href="Custom.html">CUSTOM</a>
+          <div class="icons">
+            <a href="#"><img src="wishlist.png" alt="User" class="icon-img"></a>
+            <a href="Shopping car.html"><img src="shopping-cart.png" alt="Cart" class="icon-img"></a>
+            <a href="My account.html"><img src="Profile.png" alt="Cart" class="icon-img"></a>
+          </div>
+        </nav>
+      </header>
+
+      <main class="cart-container">
+        <section class="cart-left">
+          <h2>My cart</h2>
+          <div class="cart-item">
+            <img src="CUSTOM 1.8.png" alt="Gym Hoodie">
+    
+            <div class="item-details">
+              <h4>Squid Game T-shirt - Oversized</h4>
+              <p>₹699</p>
+              <p>Size: M</p>
+            </div>
+
+           
+    
+            <div class="item-quantity">
+              <button class="qty-btn" onclick="decreaseQty()">−</button>
+              <span id="qty-value">1</span>
+              <button class="qty-btn" onclick="increaseQty()">+</button>
+            </div>
+<div>
+              Quantity: <span id="qty-value"></span>
+            </div>
+    
+         
+            <div id="thank-you-msg" style="display:none; color: green; font-weight: bold;">
+              Thank you for shopping with us!
+            </div>
+    
+            <div class="item-total">₹699</div>
+    
+            <button class="delete-btn">🗑️</button>
+          </div>
+    
+          <hr>
+    
+          <div class="cart-actions">
+            <input type="text" placeholder="Enter a promo code">
+            <input type="text" placeholder="Add a note">
+          </div>
+    
+          <a href="Apparel.html" class="continue-browsing">← Continue Browsing</a>
+        </section>
+    
+        <section class="cart-right">
+          <h3>Order summary</h3>
+          <div class="summary-line">
+            <span>Subtotal</span>
+            <span id="subtotal">₹699</span>
+          </div>
+          <div class="summary-line">
+            <span>Delivery</span>
+            <span>FREE</span>
+          </div>
+          <div class="summary-line">
+            <span>📍</span>
+            <a href="#">Pune , Maharashtra</a>
+          </div>
+    
+          <div class="summary-total">
+            <span>Total</span>
+            <span id="total">₹699</span>
+          </div>
+    
+          <button class="checkout-btn">Checkout</button>
+          <p class="secure">🔒 Secure Checkout</p>
+        </section>
+      </main>
+
+      <div class="">
+        <h2>YOU MAY ALSO LIKE</h2>
+      </div>
+    
+      <section class="featured-slider">
+        <button class="arrow left" onclick="scrollFeatured(-1)">&#10094;</button>
+      
+        <div class="featured-container" id="featured-container">
+          <div class="featured-card">
+            <img src="CUSTOM 1.7.png" alt="MEN - STAR WARS" />
+            <div class="product-details">
+              <h3>Harry Potter Oversized</h3>
+              <p class="price">₹799</p>
+            </div>
+            <button class="quick-view">Quick View</button>
+          </div>
+      
+          <div class="featured-card">
+            <img src="CUSTOM 1.5.png" alt="MEN - DC" />
+            <div class="product-details">
+              <h3>One Piece T-shirt </h3>
+              <p class="price">₹899</p>
+            </div>
+            <button class="quick-view">Quick View</button>
+          </div>
+      
+          <div class="featured-card">
+            <img src="CUSTOM 1.8.png" alt="MEN - ONE PIECE" />
+            <div class="product-details">
+              <h3>Squid Game T-shirt</h3>
+              <p class="price">₹699</p>
+            </div>
+            <button class="quick-view">Quick View</button>
+          </div>
+    
+          <div class="featured-card">
+            <img src="CUSOM 1.6.png" alt="MEN - ONE PIECE" />
+            <div class="product-details">
+              <h3>Carfield Oversized</h3>
+              <p class="price">₹749</p>
+            </div>
+            <button class="quick-view">Quick View</button>
+          </div>
+    
+          <div class="featured-card">
+            <img src="CUSTOM 1.4.png" alt="MEN - ONE PIECE" />
+            <div class="product-details">
+              <h3>DC Oversized Shirt</h3>
+              <p class="price">₹1299</p>
+            </div>
+            <button class="quick-view">Quick View</button>
+          </div>
+    
+          <div class="featured-card">
+            <img src="FEATURE PRO 4.png" alt="MEN - ONE PIECE" />
+            <div class="product-details">
+              <h3>Truimph Back Print shirt</h3>
+              <p class="price">₹999</p>
+            </div>
+            <button class="quick-view">Quick View</button>
+          </div>
+        </div>
+      
+        <button class="arrow right" onclick="scrollFeatured(1)">&#10095;</button>
+      </section>
+
+      <footer class="site-footer">
+        <div class="footer-content">
+        <div class="footer-links">
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">YouTube</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Shipping & Returns</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>© 2025 by Kalabilla - Powered and secured by <a href="#">Wix</a></p>
+          <div class="payment-icons">
+            <img src="PP 1.png" alt="Visa">
+            <img src="PP2.png" alt="Mastercard">
+            <img src="PP 4.png" alt="UnionPay">
+            <img src="PP3.png" alt="JCB">
+            <img src="PP 5.png" alt="American Express">
+            <img src="PP 6.png" alt="Discover">
+          
+            <img src="PP 8.png" alt="PayPal">
+          </div>
+        </div>
+      </footer>
+    
+
+
+      <script src="shop.js"></script>
+    </body>
+    </html>
